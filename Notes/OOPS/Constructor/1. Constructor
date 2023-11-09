@@ -1,0 +1,74 @@
+------------------------------------------------------------------------------------------------
+Topic: Constructor, Types of constructor.  
+------------------------------------------------------------------------------------------------
+
+
+In Java, a constructor is a block of codes similar to the method. It is called when an 
+instance of the class is created. At the time of calling constructor, memory for the object is 
+allocated in the memory.
+
+It is a special type of method which is used to initialize the object.
+
+Every time an object is created using the new() keyword, at least one constructor is called.
+
+It calls a default constructor if there is no constructor available in the class. In such 
+case, Java compiler provides a default constructor by default.
+
+There are two types of constructors in Java: 
+1. no-arg constructor, and 
+2. parameterized constructor.
+
+Note: It is called constructor because it constructs the values at the time of object creation. 
+It is not necessary to write a constructor for a class. It is because java compiler creates 
+a default constructor if your class doesn't have any.
+
+Rules for creating Java constructor
+There are two rules defined for the constructor.
+
+Constructor name must be the same as its class name
+A Constructor must have no explicit return type
+A Java constructor cannot be abstract, static, final, and synchronized
+
+
+1. Java Default Constructor
+------------------------------------------------------------------------------------------------
+A constructor is called "Default Constructor" when it doesn't have any parameter.
+If we do not add constructor then during compilation automatically empty body no args 
+constructor gets added in .class file.
+
+
+Note: 
+1. Default constructor is not applicable for object with argument
+2. If in the same program object with and without argument is created then default
+constructor is not applicable.
+
+2. Java Parameterized Constructor
+A constructor which has a specific number of parameters is called a parameterized constructor.
+
+Why use the parameterized constructor?
+The parameterized constructor is used to provide different values to distinct objects. However, you can provide the same values also.
+
+Example of parameterized constructor
+In this example, we have created the constructor of Student class that have two parameters. We can have any number of parameters in the constructor.
+
+//Java Program to demonstrate the use of the parameterized constructor.  
+class Student4{  
+    int id;  
+    String name;  
+    //creating a parameterized constructor  
+    Student4(int i,String n){  
+    id = i;  
+    name = n;  
+    }  
+    //method to display the values  
+    void display(){System.out.println(id+" "+name);}  
+   
+    public static void main(String args[]){  
+    //creating objects and passing values  
+    Student4 s1 = new Student4(111,"Karan");  
+    Student4 s2 = new Student4(222,"Aryan");  
+    //calling method to display the values of object  
+    s1.display();  
+    s2.display();  
+   }  
+}  

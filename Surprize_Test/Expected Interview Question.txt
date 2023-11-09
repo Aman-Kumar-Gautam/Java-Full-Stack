@@ -1,0 +1,5 @@
+1. Where practically finally block can use. ?
+Ans - Closing database connection, File Closing we can use.
+
+2. How do you exit finally block force fully ?
+Ans- Using  System.exit(0)

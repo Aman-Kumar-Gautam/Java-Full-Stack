@@ -1,0 +1,3 @@
+Array: In java array is a data structure that allows you to store multiple values
+of the same data types in a single variable.
+

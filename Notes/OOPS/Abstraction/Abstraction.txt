@@ -1,0 +1,14 @@
+What is Abstraction ?
+
+Hiding of implementation details is called as abstraction, The way we do
+that in java is by using interfces and abstract classes.
+
+
+Abstract Class:
+1. the class can have both complete and incomplete method present on interfces.
+2  Abstract class can be 0 to 100% incomplete.
+3. object of abstract lass can not be created.
+4. Non static members of abstract class can be inherting that child class.
+
+
+

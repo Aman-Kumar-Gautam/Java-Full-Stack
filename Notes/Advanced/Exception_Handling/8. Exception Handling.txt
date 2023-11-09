@@ -1,0 +1,84 @@
+Exception Handling: To handle exception in jva we use try catch block. if any
+exception occurs in try block then try block will create exception object and that object
+address is given to catch block.
+
+
+Catch block will handle that exception and hence further program will run continue.
+
+
+Types of Exception
+1. Checked exception(Compile time exception)
+2. Un-checked exception (Run time exception)
+
+
+1. Checked exception(Compile time exception): If an exception occurs when .java
+file is converted to .class file it is called as Checked exception(Compile time exception)
+
+
+In other words these exception occurs during Compilation phase of your project.
+
+
+2. Un-checked exception (Run time exception): If an exception occurs when you run .class file 
+it is called as Un-Checked exception(run time exception)
+
+
+In other words these exception occurs during Run time phase of your project.
+
+________________________________________________________________________________
+                              Throw-able
+____________________________                _________________________________                      
+    Error                                                 Exception
+____________________________                _________________________________
+> ClassNotFoundException                      > Arthemetic Exception
+> IOException                                 > ClassCastException
+> SQLException                                > Null Pointer Exception
+> FileNotFoundException                       > ArrayIndexoutofBoundsException
+                                              > NumberFormatExcepton
+_________________________________________________________________________________
+
+
+Finaly block: this block of code is optional but when it present , it will always be executed ,
+regardless of whether an exception is thrown error or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

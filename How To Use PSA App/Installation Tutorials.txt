@@ -1,0 +1,28 @@
+JDK Installation or Java Installation video no: 19/07/2023 
+Source: search download jdk 8 then login it will download automatically.
+
+Eclipse IDE & JDK installation: 19/07/2023 
+source:
+
+Jre Installation video no:
+source:
+
+mysql Installation video no:05.09.2023
+source:Mysql Website 
+Other resource: SimpleLearn Mysql Tutorial
+usrename: root
+password: test
+
+
+how to again start  mysql server
+Windows – Start and Stop Server
+Open 'Run' Window by using Win key + R.
+Type 'services.msc'
+Now search for MySQL service based on the version that is installed.
+Click on 'stop', 'start' or 'restart' the service option.
+
+
+
+Contector j: 06.09.2023 installation 20.09.2023
+
+Apache Tomcat 15.09.2023

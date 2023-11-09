@@ -1,0 +1,14 @@
+package com.web_app_6.model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public  class DAOServiceImpl implements DAOService {
+
+	@Override
+	public boolean verifyCredentials(String email, String password) {
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mylogindb","root","test");
+		return false;
+	}
+
+}

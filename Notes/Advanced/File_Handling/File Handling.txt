@@ -1,0 +1,50 @@
+Topic: File 
+1. Filereader
+2. FileWriter
+3. BufferReader
+4. BufferWriter
+5. FileInputStream
+    5.1 Int to char()--->
+    5.2 String as input
+    5.3 charector array
+6. FileOutputStream
+
+
+
+
+
+File:: 
+
+
+
+.exists() : This method is a non staic method present inside File Class. Using Thismethod we can check
+whether file is present in given path or not . If present then it will return true, if not presnt it will return false.
+
+.delete(): This method is a non staic method present inside File class. Using This
+method we can delete a file in the given path, If file is deleted it will return true, If not 
+deleted it will return false.
+
+Note : Checked Exception should be handled regardless of exception(mean whether exception occurs or not
+it should be handled)
+
+.createNewFile() : It is a non staic method present inside file class. This class
+helps us to create file at given path.
+It unable to create file it will return false if able to create file then it will return true.
+
+
+.length(): It is a non staic method present inside File Class. This class helps us read number 
+of charecter is present in the file. It is also count whilte space.
+
+
+.mkdir(): It is a non staic method present inside File Class. This class helps us to 
+create folder in the given location. It will not overwrite the folder.
+
+.list(): Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname.
+__________________________________________________________________________________________________________________
+Filereader
+
+
+
+
+FileWriter
+

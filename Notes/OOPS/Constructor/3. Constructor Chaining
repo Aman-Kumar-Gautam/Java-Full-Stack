@@ -1,0 +1,2 @@
+When u call one constructor from another constructor it is called as 
+constructor chaining.

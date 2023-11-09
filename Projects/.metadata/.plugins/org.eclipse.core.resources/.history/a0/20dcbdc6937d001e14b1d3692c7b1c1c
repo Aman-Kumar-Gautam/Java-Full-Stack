@@ -1,0 +1,21 @@
+package com.web_app_6.model;
+
+import java.sql.*;
+
+public  class DAOServiceImpl implements DAOService {
+	@Override
+	public boolean verifyCredentials(String email, String password) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mylogindb","root","test");
+			Statement stmnt = con.createStatement();
+			ResultSet result = stmnt .executeQuery("select * from login where email='"+email+"' and password='"+password+"'");
+		
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+}

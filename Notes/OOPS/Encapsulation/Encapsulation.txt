@@ -1,0 +1,6 @@
+Encspsulaton is the concept of building data (attributes) ans methods(functions)
+that operate on that data
+
+2. Here we make the variables private to avoid diect access to these variable outside the 
+class.
+3. to operate on these we use getter and setter publicly defined methods.

@@ -1,0 +1,34 @@
+What is Interfaces ?
+
+What is marker-Interfaces ?
+An empty Interfaces is called as marker-interface.
+
+* New feature in Version 8
+1. Fuctional interface:
+-------------------- 
+A functional interface should consist of exactly one incompleate method Intermidiate
+Note : In functional interface incompleate method can be one,
+but complete method can be any number.
+
+Question : Can we do multiple interfaces on functional interfaces. ?
+
+Ans: Yes 
+
+2. Default keyword :
+---------------------
+default keyword was introduced in version 8 of java ,
+using default keyword we can create complete method inside interface.
+
+3. Inside interface we can create main method.
+
+4. Static complete method: that's means we can create Static method also complete.
+
+Note: Because we can write main method in interface, so we can run also interface as well.
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+Final Keyword: If you make a variable final than changing it's value is not 
+possible (Content variable). 
+
+
+2. If you make static /non-static variable final so than initialization is mandatory.
+
+
+3. If you make a method final then overriding is not allowed.
+
+
+4. If you mak a class final then inheritance is not allowed.
+
+5. In interface every default variable is final & static.
+
+
+
+
+
+
+
+

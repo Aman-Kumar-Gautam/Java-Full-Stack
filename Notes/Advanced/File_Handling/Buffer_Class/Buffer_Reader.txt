@@ -1,0 +1,5 @@
+Buffer Reader: 
+
+Feature of Buffer Reader Class
+1. It reduces the number of I/O operations and improves performance 
+2. It can read the content line by line.

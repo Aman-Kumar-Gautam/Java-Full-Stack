@@ -1,0 +1,14 @@
+This keyword in java
+
+this keyword is a special reference variable that automatically gets created to
+store objects address.
+this keyword points to current objects ruunning in program
+A a1 = new A();
+
+1. Using this keyword we can access non-static member.
+2. We can not use this keyword to inside static method.
+3. Using this keyword we can access static variable and method it wll work but should be 
+performed as shown  
+4. Using this keyword we can call constructor from another constructor.
+
+

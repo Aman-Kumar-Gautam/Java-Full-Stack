@@ -1,0 +1,29 @@
+------------------------------------------------------------------------------------------------
+Topic : Inheritance in Java, Types of inheritance
+------------------------------------------------------------------------------------------------
+Inheritance: Inheritance in Java is a mechanism in which one object acquires all the properties 
+and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming 
+system).
+
+The idea behind inheritance in Java is that you can create new classes that are built upon 
+existing classes. When you inherit from an existing class, you can reuse methods and fields 
+of the parent class. Moreover, you can add new methods and fields in your current class also.
+
+Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+
+Note:
+1. Here we inherit the member of parent class to child class so that we 
+can reuse that in child class.
+2. 
+------------------------Note:------------------------------      
+Multiple Inheritance: Java dpes not support multiple inheritance at class level but 
+Interfaces support multiple inheritance
+
+
+Multi-level Inheritance: 
+
+
+
+The diamond problem is a term used in programming, specifically in the context of object-
+oriented languages like Java, to describe an ambiguity that arises when a class inherit
+from two classes that have a common ancestor.

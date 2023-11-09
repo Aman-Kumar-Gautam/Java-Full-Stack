@@ -1,0 +1,56 @@
+------------------------------------------------------------------------------------
+Topic: Access Modifiers in Java
+____________________________________________________________________________________
+in Java, Access modifiers help to restrict the scope of a class, constructor, 
+variable, method, or data member. It provides security, accessibility, etc to the 
+user depending upon the access modifier used with the element. Let us learn about 
+Java Access Modifiers, their types, and the uses of access modifiers in this article.
+
+Types of Access Modifiers in Java
+There are four types of access modifiers available in Java: 
+
+1. Default – No keyword required
+2. Private
+3. Protected
+4. Public
+
+_____________________________________________________________
+                  | Default  | Private | Protected | Public |
+____________________________________________________________|
+Same Class        |   YES    |   YES   |    YES    |  YES   |                  
+                  |          |         |           |        |
+Same Package      |   YES    |   NO    |    YES    |  YES   |        
+subclass          |          |         |           |        |                        
+                  |          |         |           |        |
+Same Package      |   Yes    |   NO    |    YES    |  YES   |           
+Non -subclass     |          |         |           |        |            
+                  |          |         |           |        |
+Different Package |   NO     |   NO    |    YES    |  YES   |             
+subclass          |          |         |           |        |        
+                  |          |         |           |        |
+Different Package |   No     |   NO    |    No     |  YES   |            
+Non-subclass      |          |         |           |        |
+------------------------------------------------------------|
+
+
+
+Access Specifier on Constructor:
+
+1. Private: 
+a. If you make a constructor Private then it's object can be created
+only inside same class but not in different class as shown in below example.
+b. If you make a constructor private then inheritance is not allowed .
+c. if you make a constructor default then it's object can be created in same class, same package, but
+not in different package.6 
+
+
+
+
+2. Protected: 
+a. if you make a constructor protected then it's object can be created in same class, same package, but
+not in different package.
+
+
+3. Public: 
+if you make a constructor public then it's object can be created in same class , same package, also
+in different package.

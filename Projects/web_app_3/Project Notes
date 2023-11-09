@@ -1,0 +1,2 @@
+Once we store the data in session variable we can access the data across the applecation
+because the data is stored permanently until we invalidate that

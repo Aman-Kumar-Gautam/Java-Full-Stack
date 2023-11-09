@@ -1,0 +1,61 @@
+Polymorphism: Here we develop a feature such that it can take more than 
+one form depending on the situation.
+
+
+Types of Polymorphism.
+1. Method Overriding
+2. Method Overloading
+____________________________________________________________________________________
+1. Method Overriding: 
+If subclass (child class) has the same method as declared in the parent class, 
+it is known as method overriding in Java.
+
+In other words, If a subclass provides the specific implementation of the method that has 
+been declared by one of its parent class, it is known as method overriding.
+____________________________________________________________________________________
+Usage of Java Method Overriding
+Method overriding is used to provide the specific implementation of a method which is already 
+provided by its superclass.
+Method overriding is used for runtime polymorphism
+
+____________________________________________________________________________________
+Rules for Java Method Overriding
+1. The method must have the same name as in the parent class
+2. The method must have the same parameter as in the parent class.
+3. There must be an IS-A relationship (inheritance).
+
+
+
+
+You can use @Override anotation 
+to prevernt error during Overloading.
+
+Note: during Overriding we can increase the scope of method & override in child class but we 
+can not reduce the scope of method in child class during Overriding a
+_____________________________________________________________________________
+package A;                                  | package A;
+                                            |
+public class B implements A{                |public interface A{
+    public void test(){
+        System.out.println(1)
+    }                                       |     public void test();   
+    public static void main(String[] args){
+        B b1 = new B();
+        b1.test();
+    }
+
+}                                           |}
+______________________________________________________________________________
+
+
+
+When a class implements an interface then the class has to override the incomplete method of interface that or else
+will get error as shown  in example
+_____________________________________________________________________________
+package A;                                  | package A;
+                                            |
+public class B implements A{                |public interface A{
+                                            |     public void test();   
+}                                           |}
+______________________________________________________________________________
+

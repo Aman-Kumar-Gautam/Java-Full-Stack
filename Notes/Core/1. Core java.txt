@@ -1,0 +1,497 @@
+ ------------------------------------------------------------------------------------------------
+ History of java
+ ------------------------------------------------------------------------------------------------
+ 
+ James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in 
+ June 1991. The small team of sun engineers called Green Team.
+
+ 
+Let's create the hello java program:
+
+class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
+
+Save the above file as Simple.java.
+
+To compile:
+javac Simple.java
+To execute:
+java Simple
+Output:
+
+Hello Java
+
+
+When we compile Java program using javac tool, the Java compiler converts the source code 
+into byte code.
+
+Java How to Compile ?
+Parameters used in First Java Program
+Let's see what is the meaning of class, public, static, void, main, String[], 
+System.out.println().
+
+class: keyword is used to declare a class in Java.
+public: keyword is an access modifier that represents visibility. It means it is visible to all.
+static is a keyword. If we declare any method as static, it is known as the static method. 
+The core advantage of the static method is that there is no need to create an object to invoke 
+the static method. The main() method is executed by the JVM, so it doesn't require creating an 
+object to invoke the main() method. So, it saves memory.
+void: is the return type of the method. It means it doesn't return any value.
+main: represents the starting point of the program.
+String[] args or String args[]: is used for command line argument. We will discuss it in coming section.
+System.out.println(): is used to print statement. Here, System is a class, out is an object of 
+the PrintStream class, println(): is a method of the PrintStream class. We will discuss the 
+internal working of System.out.println() statement in the coming section.
+------------------------------------------------------------------------------------------------
+Java Variables
+------------------------------------------------------------------------------------------------
+A variable is a container which holds the value while the Java program is executed. A variable 
+assigned with a data type.Variable is a name of memory location. There are three types of 
+variables in java: 
+1. local, 
+2. instance and 
+3. static.
+There are two types of data types in Java: 1. primitive and 2. non-primitive.
+
+Types of Variables
+There are three types of variables in Java:
+1. local, 
+2. instance and 
+3. static.
+4. var variable: In version 10 and above it support and after wirting this no need to specific
+data type.
+
+example like:
+var x = 10;
+var y = 10.5;
+var z = "Aman"; 
+
+1. Local Variable
+------------------------------------------------------------------------------------------------
+A variable declared inside the body of the method is called local variable. You can use this 
+variable only within that method and the other methods in the class aren't even aware that 
+the variable exists.
+
+A local variable cannot be defined with "static" keyword.
+
+2. Instance Variable
+------------------------------------------------------------------------------------------------
+A variable declared inside the class but outside the body of the method, is called an instance 
+variable. It is not declared as static.
+
+It is called an instance variable because its value is instance-specific and is not shared
+among instances.
+
+3. Static variable
+------------------------------------------------------------------------------------------------
+A variable that is declared as static is called a static variable. It cannot be local. 
+You can create a single copy of the static variable and share it among all the instances of 
+the class. Memory allocation for static variables happens only once when the class is loaded 
+in the memory.
+
+public class A  
+{  
+    static int m=100;   //static variable  
+    void method()  
+    {    
+        int n=90;   //local variable    
+    }  
+    public static void main(String args[])  
+    {  
+        int data=50;    //instance variable    
+    }  
+}//end of class 
+
+------------------------------------------------------------------------------------------------
+Topic: Data Types in Java
+------------------------------------------------------------------------------------------------
+Data types specify the different sizes and values that can be stored in the variable. 
+There are two types of data types in Java:
+
+1. Primitive data types: The primitive data types include boolean, char, byte, short, int, long, 
+float and double.
+2. Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+Java Primitive Data Types
+In Java language, primitive data types are the building blocks of data manipulation. These are 
+the most basic data types available in Java language.
+
+Java is a statically-typed programming language. It means, all variables must be declared 
+before its use. That is why we need to declare variable's type and name.
+
+There are 8 types of primitive data types:
+
+1. boolean data type
+2. byte data type
+3. char data type
+4. short data type
+5. int data type
+6. long data type
+7. float data type
+8. double data type
+------------------------------------------------------------------------------------------------
+Operators in Java
+------------------------------------------------------------------------------------------------
+Operator in Java is a symbol that is used to perform operations. 
+For example: +, -, *, / etc.
+
+There are many types of operators in Java which are given below:
+
+1. Unary Operator,
+2. Arithmetic Operator,
+3. Shift Operator,
+4. Relational Operator,
+5. Bitwise Operator,
+6. Logical Operator,
+7. Ternary Operator and
+8. Assignment Operator.
+_______________________________________________________________________________
+Java Operator Precedence
+_______________________________________________________________________________
+Operator Type	            Category	                Precedence
+Unary	                    postfix	                    expr++ expr--
+                            prefix	                    ++expr --expr +expr -expr ~ !
+Arithmetic	                multiplicative	            * / %
+                            additive	                + -
+Shift	                    shift	                    << >> >>>
+Relational	                comparison	                < > <= >= instanceof
+                            equality	                == !=
+Bitwise	                    bitwise AND	                &
+bitwise                     exclusive OR	            ^
+bitwise                     inclusive OR	            |
+Logical	                    logical AND	                &&
+                            logical OR	                ||
+Ternary	                    ternary	                    ? :
+Assignment	                assignment	                = += -= *= /= %= &= ^= |= 
+                                                        <<= >>= >>>=
+
+------------------------------------------------------------------------------------------------
+1. Java Unary Operator
+------------------------------------------------------------------------------------------------
+The Java unary operators require only one operand. Unary operators are used to perform 
+various operations i.e.:
+
+incrementing/decrementing a value by one
+negating an expression
+inverting the value of a boolean
+Java Unary Operator Example: ++ and --
+public class OperatorExample{  
+public static void main(String args[]){  
+int x=10;  
+System.out.println(x++);    //10 (11)  
+System.out.println(++x);    //12  
+System.out.println(x--);    //12 (11)  
+System.out.println(--x);    //10  
+}}  
+Output:
+
+10
+12
+12
+10
+Java Unary Operator Example 2: ++ and --
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=10;  
+System.out.println(a++ + ++a);  //10+12=22  
+System.out.println(b++ + b++);  //10+11=21  
+  
+}}  
+Output:
+
+22
+21
+Java Unary Operator Example: ~ and !
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=-10;  
+boolean c=true;  
+boolean d=false;  
+System.out.println(~a); //-11 (minus of total positive value which starts from 0)  
+System.out.println(~b); //9 (positive of total minus, positive starts from 0)  
+System.out.println(!c); //false (opposite of boolean value)  
+System.out.println(!d); //true  
+}}  
+Output:
+
+-11
+9
+false
+true
+------------------------------------------------------------------------------------------------
+2. Java Arithmetic Operators
+------------------------------------------------------------------------------------------------
+Java arithmetic operators are used to perform addition, subtraction, multiplication, and 
+division. They act as basic mathematical operations.
+
+Java Arithmetic Operator Example
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+System.out.println(a+b);    //15  
+System.out.println(a-b);    //5  
+System.out.println(a*b);    //50  
+System.out.println(a/b);    //2  
+System.out.println(a%b);    //0  
+}}  
+Output:
+
+15
+5
+50
+2
+0
+Java Arithmetic Operator Example: Expression
+public class OperatorExample{  
+public static void main(String args[]){  
+System.out.println(10*10/5+3-1*4/2);  
+}}  
+Output:
+
+21
+------------------------------------------------------------------------------------------------
+3. Java Left Shift Operator
+------------------------------------------------------------------------------------------------
+The Java left shift operator << is used to shift all of the bits in a value to the left 
+side of a specified number of times.
+
+Java Left Shift Operator Example
+public class OperatorExample{  
+public static void main(String args[]){  
+System.out.println(10<<2);  //10*2^2=10*4=40  
+System.out.println(10<<3);  //10*2^3=10*8=80  
+System.out.println(20<<2);  //20*2^2=20*4=80  
+System.out.println(15<<4);  //15*2^4=15*16=240  
+}}  
+Output:
+
+40
+80
+80
+240
+Java Right Shift Operator
+The Java right shift operator >> is used to move the value of the left operand to right by 
+the number of bits specified by the right operand.
+
+Java Right Shift Operator Example
+public OperatorExample{  
+public static void main(String args[]){  
+System.out.println(10>>2);  //10/2^2=10/4=2  
+System.out.println(20>>2);  //20/2^2=20/4=5  
+System.out.println(20>>3);  //20/2^3=20/8=2  
+}}  
+Output:
+
+2
+5
+2
+Java Shift Operator Example: >> vs >>>
+public class OperatorExample{  
+public static void main(String args[]){  
+    //For positive number, >> and >>> works same  
+    System.out.println(20>>2);  
+    System.out.println(20>>>2);  
+    //For negative number, >>> changes parity bit (MSB) to 0  
+    System.out.println(-20>>2);  
+    System.out.println(-20>>>2);  
+}}  
+Output:
+
+5
+5
+-5
+1073741819
+------------------------------------------------------------------------------------------------
+4. Java AND Operator Example: Logical && and Bitwise &
+------------------------------------------------------------------------------------------------
+The logical && operator doesn't check the second condition if the first condition is false. It checks the 
+second condition only if the first one is true.
+
+The bitwise & operator always checks both conditions whether first condition is true or false.
+
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+int c=20;  
+System.out.println(a<b&&a<c);   //false && true = false  
+System.out.println(a<b&a<c);    //false & true = false  
+}}  
+Output:
+
+false
+false
+------------------------------------------------------------------------------------------------
+5. Java AND Operator Example: Logical && vs Bitwise &
+------------------------------------------------------------------------------------------------
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+int c=20;  
+System.out.println(a<b&&a++<c);     //false && true = false  
+System.out.println(a);       //10 because second condition is not checked  
+System.out.println(a<b&a++<c);      //false && true = false  
+System.out.println(a);      //11 because second condition is checked  
+}}  
+Output:
+
+false
+10
+false
+11
+------------------------------------------------------------------------------------------------
+6. Java OR Operator Example: Logical || and Bitwise |
+------------------------------------------------------------------------------------------------
+The logical || operator doesn't check the second condition if the first condition is true. 
+It checks the second condition only if the first one is false.
+
+The bitwise | operator always checks both conditions whether first condition is true or false.
+
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+int c=20;  
+System.out.println(a>b||a<c);   //true || true = true  
+System.out.println(a>b|a<c);    //true | true = true  
+//|| vs |  
+System.out.println(a>b||a++<c); //true || true = true  
+System.out.println(a);//10 because second condition is not checked  
+System.out.println(a>b|a++<c);  //true | true = true  
+System.out.println(a);  //11 because second condition is checked  
+}}  
+Output:
+
+true
+true
+true
+10
+true
+11
+------------------------------------------------------------------------------------------------
+7. Java Ternary Operator
+------------------------------------------------------------------------------------------------
+Java Ternary operator is used as one line replacement for if-then-else statement and used a 
+lot in Java programming. It is the only conditional operator which takes three operands.
+
+Java Ternary Operator Example
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=2;  
+int b=5;  
+int min=(a<b)?a:b;  
+System.out.println(min);  
+}}  
+Output:
+
+2
+Another Example:
+
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+int min=(a<b)?a:b;  
+System.out.println(min);  
+}}  
+Output:
+5
+Java Assignment Operator
+Java assignment operator is one of the most common operators. It is used to assign the 
+value on its right to the operand on its left.
+
+Java Assignment Operator Example
+public class OperatorExample{  
+public static void main(String args[]){  
+int a=10;  
+int b=20;  
+a+=4;   //a=a+4 (a=10+4)  
+b-=4;   //b=b-4 (b=20-4)  
+System.out.println(a);  
+System.out.println(b);  
+}}  
+Output:
+
+14
+16
+Java Assignment Operator Example
+public class OperatorExample{  
+public static void main(String[] args){  
+int a=10;  
+a+=3;   //10+3  
+System.out.println(a);  
+a-=4;   //13-4  
+System.out.println(a);  
+a*=2;   //9*2  
+System.out.println(a);  
+a/=2;   //18/2  
+System.out.println(a);  
+}}  
+Output:
+
+13
+9
+18
+9
+Java Assignment Operator Example: Adding short
+public class OperatorExample{  
+public static void main(String args[]){  
+short a=10;  
+short b=10;  
+//a+=b; //a=a+b internally so fine  
+a=a+b;  //Compile time error because 10+10=20 now int  
+System.out.println(a);  
+}}  
+Output:
+
+Compile time error
+After type cast:
+
+public class OperatorExample{  
+public static void main(String args[]){  
+short a=10;  
+short b=10;  
+a=(short)(a+b);//20 which is int now converted to short  
+System.out.println(a);  
+}}  
+Output:
+
+20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

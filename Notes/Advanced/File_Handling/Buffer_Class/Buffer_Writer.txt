@@ -1,0 +1,4 @@
+It reduce the number of I/O operations and improve 
+performance
+
+newLine(): It print the empty new line.

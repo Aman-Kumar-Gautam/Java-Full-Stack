@@ -1,0 +1,5 @@
+package com.web_app_6.model;
+
+public class DAOServiceImpl {
+
+}

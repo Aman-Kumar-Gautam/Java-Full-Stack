@@ -1,0 +1,22 @@
+Lambda Expression: It was introduced In java 8 ersion, it reduce number of line of code ,
+Functional programming can be implemented with Lambdas expression. 
+
+Note : Object or instance of reference variable interface can not be created.
+
+
+Class Upcasting : Here we create parent class reference variable & store child class 
+objects address into it,
+  
+Class upcasting results in reusing of reference variable,
+
+A a1 = new B(); // create a variable for reference of A 
+class 
+In this 
+now a1 will hold the reference address of class A
+
+Class Down-Casting: Here we create child class variable & store parent class objects
+address into it. 
+B b1 = (B)new A(); // create a variable for reference of class B
+here 
+
+

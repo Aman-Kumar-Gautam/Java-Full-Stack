@@ -1,0 +1,7 @@
+1. Java (Core + OOPS + Advanced + DSA)
+2. Stream API
+3. collection*
+4. git github
+5. Aws 
+6. web services with mono lithic architecture
+7. web services with micro services

@@ -1,0 +1,123 @@
+-----------------------------------------------------------------------------------------------
+# First week test
+-----------------------------------------------------------------------------------------------
+1. Create local, Static and Non-Static variable and print on it main method.
+2. Write s program to Constructor Overloading ?
+3. Create a program for multi level Inheitance of class , Note class name should be A,B,C.?
+4. Do Inheitance between classes present in different package.
+
+5. Use private variable & method and do Inheitance
+6. Create a program to call non-static method twice from main?
+outpu: 
+100
+100
+7.Create a non-static method to return double value to main and print 10.3f
+
+----------------------------------------------------------------------------------------------
+# Second Week
+-----------------------------------------------------------------------------------------------
+1. Define class and objects,write a program to print objects address.?
+2. Write a static, non static and local variable and write a program to explain all?
+3. What are constructor write a program to call a constructor & print "Hello World.!" ?
+4. What is constructor Overloading write a exemple.
+5. What is defult constructor ?
+6. Create a method such that it cannot return any value but should print " Hello " when called using reference variable.?
+7. Create a constructor , non static method, and static method constructor should print -a
+non static method should print - xyz
+static method should print abc
+
+Output :
+a
+xyz
+abc
+
+8. Create a constructor with local variable x & should print 10 and create a  non static method with local variable y & should print 20,
+create static method with local variable z & should print 30
+
+output 
+30 
+10
+20
+
+9. Create a method with two argumnet x & y 
+a. this method should be static
+b. it should add x&y
+c. return result of x & y
+d. print result
+
+
+
+10. Create an interface with one incomplete and 1 complete method & 
+implement that in a class without Lambda expression ?
+
+11. Create an interface with one incomplete and 1 complete method & 
+implement that in a class using Lambda expression ?
+
+Perfom
+1. Addition,
+2. Subtraction,
+3. Multipication,
+4. Division,
+        with Lambda expression and Functional interface.?
+
+
+12. Write a program to run interface and print welcome ?
+
+14. Create a program for simple interest using FunctionalInterface and Lambda_expression ?
+-----------------------------------------------------------------------------------------------
+# Third week test
+-----------------------------------------------------------------------------------------------
+Practice on 24.08.2023
+1. Write a program to sort an array?
+2. Write a program to remove duplicate form array ?
+3. Count the number of times letter "A" occures in the string?
+4. Count the number of  word  in the string?
+5.
+
+
+
+
+
+1. Write the program to count the number of charecter in the given file. A.txt
+having text "hello world".
+
+2.  
+
+3. Create a program  to read  content from A.txt and Copy at B.txt file.
+
+4. Perform these operation using user input is ?
+a. 1 - create file
+b. 2 - delete file
+c. 3 - file exists or not
+d. 4 - folder will create at given path
+
+
+
+
+1. Write JDBC code to save record in myaql db.
+2. Write JDBC code to delete record in myaql db.
+3. Write JDBC code to update record in myaql db.
+4. Write JDBC code to read all the records from myaql db.
+5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
