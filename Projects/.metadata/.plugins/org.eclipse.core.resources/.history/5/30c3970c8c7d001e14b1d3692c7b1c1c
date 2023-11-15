@@ -1,5 +1,0 @@
-package com.web_app_6.model;
-
-public interface DAOService {
-	public boolean verifyCredentials(String username, String password);
-}

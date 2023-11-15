@@ -1,6 +1,8 @@
 package com.web_app_6.controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,7 +24,8 @@ public class RegistrationController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		
+		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/create_registration.jsp");
+		rd.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -35,6 +38,10 @@ public class RegistrationController extends HttpServlet {
 		DAOService service = new DAOServiceImpl();
 		service.connectDB();
 		service.createRegistration(name,city,email,mobile);
+		request.setAttribute("msg", "Record is Saved...!");
+		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/create_registration.jsp");
+		rd.forward(request, response);
+		
 	}
 
 }

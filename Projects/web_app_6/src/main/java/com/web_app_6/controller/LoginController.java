@@ -22,6 +22,7 @@ public class LoginController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -37,7 +38,12 @@ public class LoginController extends HttpServlet {
 			rd.forward(request, response);
 		
 		}
+		else { 
+			request.setAttribute("error", "Invalid Details...!");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			rd.forward(request, response);
 		
+		}
 		
 		
 		
