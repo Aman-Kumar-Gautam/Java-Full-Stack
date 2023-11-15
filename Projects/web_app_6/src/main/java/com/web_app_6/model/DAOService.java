@@ -8,4 +8,5 @@ public interface DAOService {
 	public void createRegistration(String name, String city, String email, String mobile);
 	public ResultSet readRegistration();
 	public void deleteRegistration(String email);
+	public void updateRegistration(String email, String mobile);
 }

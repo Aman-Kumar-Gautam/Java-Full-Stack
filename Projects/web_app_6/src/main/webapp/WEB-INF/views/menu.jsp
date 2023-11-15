@@ -10,5 +10,8 @@
 <body>
 	<a href="newReg">Create new registration</a>
 	<a href="readRegistration">All registrations</a>
+	<form action="logOut" method="post">
+	<input type="submit" value="Logout"/>
+	</form>
 </body>
 </html>
