@@ -1152,3 +1152,9 @@ Caused by: java.security.NoSuchAlgorithmException: No algorithm found for 1.2.84
 	at org.eclipse.osgi.internal.signedcontent.SignedBundleFile.initializeSignedContent(SignedBundleFile.java:56)
 	at org.eclipse.osgi.internal.signedcontent.SignedBundleHook.getSignedContent(SignedBundleHook.java:223)
 	... 13 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-11-19 10:38:26.163
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.ui 2 2 2023-11-19 10:42:21.195
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
