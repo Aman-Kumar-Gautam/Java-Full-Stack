@@ -9,7 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import javax.servlet.http.HttpSession;
 
 import com.web_app_6.model.DAOService;
 import com.web_app_6.model.DAOServiceImpl;
@@ -25,13 +25,25 @@ public class ReadRegistrationController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		DAOService service = new DAOServiceImpl();
-		service.connectDB();
-		ResultSet result = service.readRegistration();
-		request.setAttribute("result", result);
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/search_result.jsp");
-		rd.forward(request, response);
-	}
+		try {
+			HttpSession session = request.getSession(false);
+			session.setMaxInactiveInterval(5);
+			if (session.getAttribute("email")!=null) {
+			DAOService service = new DAOServiceImpl();
+			service.connectDB();
+			ResultSet result = service.readRegistration();
+			request.setAttribute("result", result);
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/search_result.jsp");
+			rd.forward(request, response);
+			}else {
+				RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+				rd.forward(request, response);
+			}
+		} catch (Exception e) {
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			rd.forward(request, response);
+		}
+		}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
