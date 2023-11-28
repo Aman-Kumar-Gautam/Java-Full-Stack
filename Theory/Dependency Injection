@@ -1,0 +1,16 @@
+
+interface A{
+
+}
+
+class B implemets A{
+
+}
+During runtime Spring IOC
+create object dependecy that is dependecy injection using @Autowired spring anotation
+
+@Autowired
+private B b1
+
+@Autowired
+private A a1
