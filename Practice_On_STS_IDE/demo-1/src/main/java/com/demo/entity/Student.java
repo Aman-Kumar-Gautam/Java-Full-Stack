@@ -7,16 +7,16 @@ public class Student {
 	@Id //Primary Key
 	private long id;
 	
-	public int getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
-	public void setMobile(int mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 	private String name;
 	private String email;
 	private int fee;
-	private int mobile; 
+	private String mobile; 
 	
 	public long getId() {
 		return id;

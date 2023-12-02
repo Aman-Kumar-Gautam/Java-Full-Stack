@@ -7,4 +7,10 @@
     <fullyQualifiedTypeName name="com.demo.entity.Student"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+    <fullyQualifiedTypeName name="org.springframework.data.domain.Sort"/>
+    <fullyQualifiedTypeName name="com.sun.xml.bind.v2.runtime.Name"/>
 </qualifiedTypeNameHistroy>

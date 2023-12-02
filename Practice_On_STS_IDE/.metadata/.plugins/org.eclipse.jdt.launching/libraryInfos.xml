@@ -2,4 +2,23 @@
 <libraryInfos>
     <libraryInfo home="C:\Users\Aman Gautam\Desktop\STS IDE\sts-4.8.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246\jre" version="15"/>
     <libraryInfo home="C:\Users\Aman Gautam\Desktop\STS IDE\sts-4.8.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.0.v20201014-1246" version="15"/>
+    <libraryInfo home="C:\Program Files\Java\jdk1.8.0_202" version="1.8.0_202">
+        <bootpath>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar"/>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
 </libraryInfos>
