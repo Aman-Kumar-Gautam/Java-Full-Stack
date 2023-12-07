@@ -7,6 +7,6 @@
 <title>Create Lead Page</title>
 </head>
 <body>
-<h1>Create leads ggg</h1>
+<h1>Create leads</h1>
 </body>
 </html>

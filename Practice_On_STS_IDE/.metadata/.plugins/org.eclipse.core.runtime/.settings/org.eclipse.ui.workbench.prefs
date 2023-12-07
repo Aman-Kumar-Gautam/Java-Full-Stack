@@ -20,6 +20,7 @@ org.eclipse.jface.textfont=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2
 org.eclipse.mylyn.wikitext.ui.presentation.textFont=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
 org.eclipse.pde.internal.ui.compare.ManifestContentMergeViewer=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
 org.eclipse.pde.internal.ui.compare.PluginContentMergeViewer=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands/>
 org.eclipse.ui.ide.systemDefault.CONFLICTING_COLOR=240,15,66
 org.eclipse.ui.ide.systemDefault.CONTENT_ASSIST_BACKGROUND_COLOR=52,57,61
 org.eclipse.ui.ide.systemDefault.CONTENT_ASSIST_FOREGROUND_COLOR=238,238,238
@@ -81,8 +82,6 @@ org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_TAB_OUTLINE_COL
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR=221,221,221
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_UNSELECTED_TABS_COLOR_END=64,64,67
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_UNSELECTED_TABS_COLOR_START=73,74,77
-org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.HOVER_BACKGROUND=52,57,61
-org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.HOVER_FOREGROUND=238,238,238
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.INACTIVE_TAB_BG_END=49,53,56
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=59,64,66
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.INACTIVE_TAB_INNER_KEYLINE_COLOR=81,86,88
@@ -95,9 +94,6 @@ org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.INFORMATION_BACKGROUND
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.INFORMATION_FOREGROUND=238,238,238
 org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
 org.eclipse.ui.ide.systemDefault.org.eclipse.wst.sse.ui.textfont=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
-org.eclipse.ui.ide.systemDefault.org.springframework.ide.eclipse.boot.dash.AltTextDecorColor=173,216,230
-org.eclipse.ui.ide.systemDefault.org.springframework.ide.eclipse.boot.dash.MutedTextDecorColor=211,211,211
-org.eclipse.ui.ide.systemDefault.org.springframework.ide.eclipse.boot.dash.TextDecorColor=144,238,144
 org.eclipse.ui.ide.systemDefault.org.springframework.tooling.ls.eclipse.commons.STS4BootMarkerIndicationColor=56,84,26
 org.eclipse.ui.ide.systemDefault.terminal.views.view.font.definition=1|Consolas|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
 org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=255,255,255
