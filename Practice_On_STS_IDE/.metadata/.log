@@ -2318,3 +2318,30 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.ide.eclipse.b
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:47:41.593
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:47:41.607
+!MESSAGE classpath=113 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:47:41.614
+!MESSAGE buffering callback sts4.classpath.TSthcOAP marketingapp false 113
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:47:41.615
+!MESSAGE executing callback sts4.classpath.TSthcOAP 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:47:41.879
+!MESSAGE executing callback sts4.classpath.TSthcOAP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:48:21.104
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TSthcOAP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:48:21.105
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.TSthcOAP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:48:21.107
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-13 17:48:21.109
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.TSthcOAP => OK
