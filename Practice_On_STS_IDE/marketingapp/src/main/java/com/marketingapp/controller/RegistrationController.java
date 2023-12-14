@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,20 +13,27 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.marketingapp.dto.RegistrationDto;
 import com.marketingapp.entity.Registration;
 import com.marketingapp.service.RegistrationService;
+import com.marketingapp.util.EmailService;
 @Controller
 public class RegistrationController {
-	//Handler Methods
-	
 	//http://localhost:8080/view
 	@Autowired
 	private RegistrationService registrationService;
-
 	
 	@RequestMapping("/view")
 	public String viewRegistrationPage() {
 		return "create_lead";
 	}
+	@Autowired
+	private EmailService emailService;
 	
+	
+	
+	
+	
+	
+	
+	//	Handler Methods
 	
 	// 1st Method to save data in DB
 	
@@ -76,7 +84,7 @@ public class RegistrationController {
 			reg.setEmail(dto.getEmail());
 			reg.setMobile(dto.getMobile());
 			registrationService.saveRegistration(reg);
-			
+			emailService.sendMail(dto.getEmail(), "Welcome", "Test");
 			model.addAttribute("msg", "Record is saved ..!");
 			return "create_lead";
 			
@@ -101,4 +109,32 @@ public class RegistrationController {
 			}
 	
 		}
+		@RequestMapping("/update")
+		public String viewUpdatePage(@RequestParam long id, ModelMap model) {
+			Registration registration =  registrationService.getRegistrationById(id);
+			
+			model.addAttribute("registration", registration);
+			
+			
+			return "update_lead";
+	
+		}
+		@RequestMapping("/updateReg")
+		public String updateRegistration(RegistrationDto dto, Model model) {
+			Registration reg = new Registration();
+			reg.setId(dto.getId());
+			reg.setFirstName(dto.getFirstName());
+			reg.setLastName(dto.getLastName());
+			reg.setEmail(dto.getEmail());
+			reg.setMobile(dto.getMobile());
+			registrationService.saveUpdatedRegistration(reg);
+			List<Registration> registrations = registrationService.getAllRegistrations();
+			{
+				model.addAttribute("registrations", registrations);
+				
+				
+				return "list_registrations";
+			}
+			
+}
 }

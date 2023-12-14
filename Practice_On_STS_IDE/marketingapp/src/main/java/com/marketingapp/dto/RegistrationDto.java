@@ -25,8 +25,15 @@ public class RegistrationDto {
 	public void setMobile(long mobile) {
 		this.mobile = mobile;
 	}
+	public long getId() {
+		return Id;
+	}
+	public void setId(long id) {
+		Id = id;
+	}
 	private String firstName;
 	private String lastName;
 	private String email;
 	private long mobile;
+	private long Id;
 }

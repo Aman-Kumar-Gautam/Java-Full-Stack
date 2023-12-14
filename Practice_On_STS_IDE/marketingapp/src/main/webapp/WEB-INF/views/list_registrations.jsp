@@ -18,6 +18,7 @@
 			<th>Email</th>
 			<th>Mobile</th>
 			<th>Delete</th>
+			<th>Update</th> 
 		</tr>
 		<c:forEach var="registrations" items="${registrations}">
 			<tr>
@@ -27,6 +28,7 @@
 				<td>${registrations.email}</td>
 				<td>${registrations.mobile}</td>
 				<td><a href="delete?id=${registrations.id}">Delete</a></td>
+				<td><a href="update?id=${registrations.id}">Update</a></td>
 			</tr>
 
 		</c:forEach>
