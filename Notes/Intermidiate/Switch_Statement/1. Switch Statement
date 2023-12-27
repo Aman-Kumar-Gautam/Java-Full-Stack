@@ -1,0 +1,12 @@
+The Switch Statement:
+The switch statement is used to select among several small integer (or character)
+values. The switch statement is used to select among several small integer 
+(or character) values. It consists of an expression and a block. The block 
+contains a sequence of statements and a collection of labels, which represent 
+possible values of the expression. All the labels must be distinct compile-time 
+constants. 
+An optional default label, if present, matches any unrepresented label. If there is no applicable case for the switch expression, the switch statement is over; otherwise, control
+passes to the appropriate label and all statements from that point on are executed.
+A break statement may be used to force early termination of the switch and is
+almost always used to separate logically distinct cases. 
+

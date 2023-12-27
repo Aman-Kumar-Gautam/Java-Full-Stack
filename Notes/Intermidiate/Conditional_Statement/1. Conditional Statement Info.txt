@@ -1,0 +1,16 @@
+If statement: The if statement is the fundamental decision maker. Its basic form is
+if( expression )
+statement
+next statement
+If expression evaluates to true, then statement is executed; otherwise, it is
+not. When the if statement is completed (without an unhandled error), control
+passes to the next statement.
+
+
+and Else statement :
+Optionally, we can use an if-else statement, as follows:
+if( expression )
+statement1
+else
+statement2
+next statement

@@ -29,3 +29,4 @@ Apache Tomcat 15.09.2023
 
 STS Spring installation - 25.10.2023
 
+Postman Installation 
