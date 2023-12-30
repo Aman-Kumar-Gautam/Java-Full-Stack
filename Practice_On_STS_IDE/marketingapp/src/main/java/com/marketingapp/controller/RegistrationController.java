@@ -136,5 +136,8 @@ public class RegistrationController {
 				return "list_registrations";
 			}
 			
-}
+		}
+		
+		
+		
 }

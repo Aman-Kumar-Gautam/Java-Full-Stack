@@ -29,4 +29,6 @@ Apache Tomcat 15.09.2023
 
 STS Spring installation - 25.10.2023
 
-Postman Installation 
+Postman Installation : 17.11.2023 at 15 min
+
+Intelli J : 27.11.2023 at 34

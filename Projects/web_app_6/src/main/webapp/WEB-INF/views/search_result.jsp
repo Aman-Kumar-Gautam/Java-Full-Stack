@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Search Registration</title>
 </head>
 <body>
 	<h2>All Registration</h2>
