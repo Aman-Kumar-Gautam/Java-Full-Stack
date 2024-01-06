@@ -4,7 +4,10 @@ import com.blog.blogger.payload.PostDto;
 import com.blog.blogger.service.PostService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 
 @RestController
@@ -17,7 +20,10 @@ public class PostController {
     private PostService postService;
     @PostMapping
 
-    public ResponseEntity<PostDto> createPost(@RequestBody PostDto postDto){
+    public ResponseEntity<?> createPost(@Valid @RequestBody PostDto postDto, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return new ResponseEntity<>(bindingResult.getFieldError().getDefaultMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+        }
         PostDto dto = postService.createPost(postDto);
         return new ResponseEntity<> (dto, HttpStatus.CREATED);
     }
