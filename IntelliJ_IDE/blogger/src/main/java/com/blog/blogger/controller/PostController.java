@@ -8,6 +8,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 
 @RestController
@@ -22,7 +23,8 @@ public class PostController {
 
     public ResponseEntity<?> createPost(@Valid @RequestBody PostDto postDto, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
-            return new ResponseEntity<>(bindingResult.getFieldError().getDefaultMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(bindingResult.getFieldError().getDefaultMessage(),
+                    HttpStatus.INTERNAL_SERVER_ERROR);
         }
         PostDto dto = postService.createPost(postDto);
         return new ResponseEntity<> (dto, HttpStatus.CREATED);
@@ -31,6 +33,11 @@ public class PostController {
     public ResponseEntity<String> deletePost(@PathVariable long id){
         postService.deletePost(id);
         return new ResponseEntity<> ("Post is deleted", HttpStatus.OK);
+    }
+    @GetMapping
+    public ResponseEntity<List<PostDto>>getAllPosts(){
+        List<PostDto> postDtos = postService.geAllPosts();
+        return new ResponseEntity<> (postDtos, HttpStatus.OK);
     }
 
 }

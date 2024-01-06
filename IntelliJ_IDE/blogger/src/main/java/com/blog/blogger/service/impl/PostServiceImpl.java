@@ -9,7 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.nio.file.ReadOnlyFileSystemException;
+import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PostServiceImpl implements PostService {
@@ -58,5 +61,26 @@ public class PostServiceImpl implements PostService {
                 ()->new ResourcesNotFoundException("Post not found with id: "+id)
         );
     }
+
+
+    @Override
+    public List<PostDto> geAllPosts() {
+        List<Post> posts = postRepo.findAll();
+    List<PostDto> dtos  = posts.stream().map(p-> mapToDto(p)).collect(Collectors.toList());
+        return dtos;
+    }
+
+    PostDto mapToDto(Post post){
+        PostDto dto = new PostDto();
+        dto.setId(post.getId());
+        dto.setTitle(post.getTitle());
+        dto.setDescription(post.getDescription());
+        dto.setContent(post.getContent());
+        dto.setMessage("post is created");
+
+        return dto;
+    }
+
+
 
 }
