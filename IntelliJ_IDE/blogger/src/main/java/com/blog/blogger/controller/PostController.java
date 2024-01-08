@@ -47,4 +47,16 @@ public class PostController {
         return new ResponseEntity<> (postDtos, HttpStatus.OK);
     }
 
+
+
+
+    //http://localhost:8080/api/posts?postId=1
+    @PutMapping
+    public ResponseEntity<PostDto> updatePost(
+            @RequestParam("postId") long postId,
+            @RequestBody PostDto postDto
+    ){
+        PostDto dto = postService.updatePost(postId, postDto);
+        return new ResponseEntity<>(dto, HttpStatus.OK);
+    }
 }

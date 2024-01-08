@@ -12,4 +12,6 @@ public interface PostService {
     void deletePost(long id);
 
     List<PostDto> geAllPosts(int pageNo, int pageSize, String sortBy, String sortDir);
+
+    PostDto updatePost(long postId, PostDto postDto);
 }
