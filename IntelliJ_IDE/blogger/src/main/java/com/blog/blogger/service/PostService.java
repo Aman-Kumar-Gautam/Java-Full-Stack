@@ -11,5 +11,5 @@ public interface PostService {
 
     void deletePost(long id);
 
-    List<PostDto> geAllPosts();
+    List<PostDto> geAllPosts(int pageNo, int pageSize, String sortBy, String sortDir);
 }

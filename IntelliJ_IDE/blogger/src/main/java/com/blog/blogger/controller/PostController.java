@@ -34,9 +34,16 @@ public class PostController {
         postService.deletePost(id);
         return new ResponseEntity<> ("Post is deleted", HttpStatus.OK);
     }
+
+
     @GetMapping
-    public ResponseEntity<List<PostDto>>getAllPosts(){
-        List<PostDto> postDtos = postService.geAllPosts();
+    public ResponseEntity<List<PostDto>>getAllPosts(
+            @RequestParam(name="pageNo",defaultValue = "0", required = false) int pageNo,
+            @RequestParam(name="pageSize", defaultValue = "3", required = false) int pageSize,
+            @RequestParam(name="sortBy", defaultValue="id", required = false) String sortBy,
+            @RequestParam(name="sortDir", defaultValue="asc", required = false) String sortDir
+    ){
+        List<PostDto> postDtos = postService.geAllPosts(pageNo, pageSize, sortBy, sortDir);
         return new ResponseEntity<> (postDtos, HttpStatus.OK);
     }
 

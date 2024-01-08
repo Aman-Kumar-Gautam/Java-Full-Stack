@@ -5,13 +5,13 @@ import com.blog.blogger.exception.ResourcesNotFoundException;
 import com.blog.blogger.payload.PostDto;
 import com.blog.blogger.repository.PostRepository;
 import com.blog.blogger.service.PostService;
-import org.springframework.http.HttpStatus;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.nio.file.ReadOnlyFileSystemException;
-import java.util.Collection;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -64,8 +64,12 @@ public class PostServiceImpl implements PostService {
 
 
     @Override
-    public List<PostDto> geAllPosts() {
-        List<Post> posts = postRepo.findAll();
+    public List<PostDto> geAllPosts(int pageNo, int pageSize, String sortBy, String sortDir) {
+        Sort sort = sortDir.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(sortBy).ascending()
+                : Sort.by(sortBy).descending();
+        Pageable pageable = PageRequest.of(pageNo,pageSize, sort);
+        Page<Post> pagePosts = postRepo.findAll(pageable);
+        List<Post> posts = pagePosts.getContent();
     List<PostDto> dtos  = posts.stream().map(p-> mapToDto(p)).collect(Collectors.toList());
         return dtos;
     }
