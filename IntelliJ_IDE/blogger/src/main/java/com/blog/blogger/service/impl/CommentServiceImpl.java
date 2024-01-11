@@ -8,9 +8,10 @@ import com.blog.blogger.payload.CommentDto;
 import com.blog.blogger.repository.CommentRepository;
 import com.blog.blogger.repository.PostRepository;
 import com.blog.blogger.service.CommentService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.DeleteMapping;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CommentServiceImpl implements CommentService {
@@ -47,6 +48,34 @@ public class CommentServiceImpl implements CommentService {
 
 
         return dto;
+    }
+
+    @Override
+    public void deleteComment(long commentId) {
+
+        Comment comment = commentRepository.findById(commentId).orElseThrow(
+                () -> new ResourcesNotFoundException("Comment not found with id: " + commentId)
+        );
+
+        commentRepository.deleteById(commentId);
+    }
+
+    @Override
+    public List<CommentDto> getCommentsByPostId(long postId) {
+        List<Comment> comments = commentRepository.findByPostId(postId);
+
+        List<CommentDto> commentDtos = comments.stream().map(c -> mapToDto(c)).collect(Collectors.toList());
+        return commentDtos;
+    }
+
+    CommentDto mapToDto(Comment comment){
+        CommentDto dto = new CommentDto();
+        dto.setId(comment.getId());
+        dto.setName(comment.getName());
+        dto.setEmail(comment.getEmail());
+        dto.setBody(comment.getBody());
+        return dto;
+
     }
 
 }
