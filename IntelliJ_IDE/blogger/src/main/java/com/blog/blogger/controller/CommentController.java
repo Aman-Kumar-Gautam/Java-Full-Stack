@@ -43,7 +43,12 @@ public class CommentController {
         List<CommentDto> commentDto = commentService.getCommentsByPostId(postId);
         return new ResponseEntity<>(commentDto, HttpStatus.OK);
 
+    }
 
+    @GetMapping()
+    public ResponseEntity<List<CommentDto>>getAllComments(){
+       List<CommentDto> commentDtos = commentService.getAllComments();
+        return new ResponseEntity<>(commentDtos,HttpStatus.OK);
     }
 
 }
