@@ -8,7 +8,7 @@ Welcome to the Java Full Stack repository, your one-stop destination for honing 
    - **Description:** This section encompasses a series of hands-on exercises and projects designed to enhance your proficiency with the Eclipse Integrated Development Environment (IDE).
 
 ### 2. **How To Use PSA App**
-   - **Description:** Discover detailed guidelines on effectively utilizing the PSA (Placeholder for actual app name) application. Learn how to navigate its features and leverage its capabilities.
+   - **Description:** Discover detailed guidelines on effectively utilizing the PSA (Pankaj Sir Academy) application. Learn how to navigate its features and leverage its capabilities.
 
 ### 3. **IntelliJ_IDE/blogger**
    - **Description:** Explore the integration of IntelliJ IDE with a blogger project. Noteworthy in this section is the recent addition of Password Authentication for Admin, enhancing the security of the blogger application.
