@@ -13,9 +13,9 @@ public class BloggerApplication {
 		SpringApplication.run(BloggerApplication.class, args);
 	}
 
-	@Bean
-	public PasswordEncoder getEncodedPassword(){
-		return new BCryptPasswordEncoder();
-	}
+//	@Bean
+//	public PasswordEncoder getEncodedPassword(){
+//		return new BCryptPasswordEncoder();
+//	}
 
 }
