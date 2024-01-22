@@ -10,6 +10,7 @@ import com.blog.blogger.repository.RoleRepository;
 import com.blog.blogger.repository.UserRepository;
 
 
+import com.blog.blogger.security.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,18 +41,20 @@ public class AuthController {
     @Autowired
     private RoleRepository roleRepository;
 
+    @Autowired
+    private JwtTokenProvider tokenProvider;
 
     @PostMapping("/signin")
-    public ResponseEntity<String> authenticateUser(@RequestBody LoginDto loginDto){
+    public ResponseEntity<JWTAuthResponse> authenticateUser(@RequestBody LoginDto loginDto){
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                 loginDto.getUsernameOrEmail(), loginDto.getPassword()));
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        return new ResponseEntity<>("User Sign-In successfully", HttpStatus.OK);
+        // return new ResponseEntity<>("User Sign-In successfully", HttpStatus.OK);
         // get token form tokenProvider
-        // String token = tokenProvider.generateToken(authentication);
+        String token = tokenProvider.generateToken(authentication);
 
-        // return ResponseEntity.ok(new JWTAuthResponse(token));
+        return ResponseEntity.ok(new JWTAuthResponse(token));
     }
 
 
