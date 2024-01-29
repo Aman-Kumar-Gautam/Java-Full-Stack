@@ -2,25 +2,45 @@ package com.user_registration.controller;
 
 
 import com.user_registration.entity.User;
+import com.user_registration.service.impl.EmailService;
+import com.user_registration.service.impl.EmailVerificationService;
 import com.user_registration.service.impl.UserService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+
 
 @RestController
 @RequestMapping("/api")
 public class RegistrationController {
 
-    private UserService userService;
-    @PostMapping("/register")
-    public Map<String, String>registerUser(@RequestBody User user){
-        // Register the user without email verification
-       User regiseredUser = userService.registerUser(user);
-       return null;
+    private final UserService userService;
+
+    private final EmailService emailService;
+
+    private final EmailVerificationService emailVerificationService;
+
+    public RegistrationController(UserService userService, EmailService emailService,EmailVerificationService emailVerificationService) {
+        this.userService = userService;
+        this.emailService = emailService;
+        this.emailVerificationService = emailVerificationService;
     }
 
-    
+
+    @PostMapping("/register")
+    public Map<String, String> registerUser(@RequestBody User user) {
+        // Register the user without email verification
+        User registeredUser = userService.registerUser(user);
+        return emailService.sendOtpEmail(user.getEmail());
+
+
+    }
+
+    //http://localhost:8080/api/verify-otp?email=&otp=
+
+    @PostMapping("/verify-otp")
+    public Map<String, String> verifyOtp(@RequestParam String email, @RequestParam String otp) {
+        return emailVerificationService.verifyOtp(email, otp);
+    }
 }

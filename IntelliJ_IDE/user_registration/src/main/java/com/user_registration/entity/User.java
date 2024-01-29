@@ -17,9 +17,9 @@ import javax.persistence.Id;
 public class User {
 
     @Id
-    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String username;
+    private String name;
     private String email;
     private String password;
     private String mobile;
@@ -27,3 +27,4 @@ public class User {
 
 
 }
+
