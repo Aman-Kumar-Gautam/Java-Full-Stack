@@ -1,3 +1,5 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "editor.fontFamily": "\"Fira code\", Consolas, 'Courier New', monospace",
+    "files.autoSave": "onFocusChange"
 }
