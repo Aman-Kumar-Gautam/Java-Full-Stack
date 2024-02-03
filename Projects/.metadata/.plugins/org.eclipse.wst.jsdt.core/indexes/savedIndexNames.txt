@@ -7,7 +7,6 @@ INDEX VERSION 1.4+C:\Users\Aman Gautam\Desktop\Java Full Stack\Projects\.metadat
 1526414861.index
 1570175508.index
 3298798510.index
-820282975.index
 2669562902.index
 3035979553.index
 3539044896.index
