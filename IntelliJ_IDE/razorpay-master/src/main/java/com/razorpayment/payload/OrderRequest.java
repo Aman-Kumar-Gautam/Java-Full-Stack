@@ -1,11 +1,11 @@
-package com.razorpayment.payload;
+// package com.razorpayment.payload;
 
-import lombok.Data;
+// import lombok.Data;
 
-@Data
-public class OrderRequest {
-    private long amount;
-    private String currency;
+// @Data
+// public class OrderRequest {
+//     private long amount;
+//     private String currency;
 
 
-}
+// }
