@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-UserRegistrationApplication<user_registration>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.user_registration.UserRegistrationApplication",
+            "projectName": "user_registration",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

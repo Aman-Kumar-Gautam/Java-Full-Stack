@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;web_app_jstl_1&apos; to &apos;web_app_jstl_01&apos;" description="Rename resource &apos;web_app_jstl_1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/web_app_jstl_1" name="web_app_jstl_01" stamp="1707284215345" updateReferences="true"/>
+</session>
