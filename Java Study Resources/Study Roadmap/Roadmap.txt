@@ -1,0 +1,101 @@
+                                Roadmap to Learn Java
+Start with the Overview of Java. Read some Java Development-related blogs and also research some Java Development-related things. For example read blogs on Introduction to Java, History of Java, and also topics like Is it Worth to Become a Java Developer in 2024, etc., etc., and make a complete mind makeup to start your journey on Java Development. Make yourself self-motivated to learn Java Development and build some awesome projects using Java. Do it regularly and also start learning one by one new concepts. It will be great to join some workshops or conferences on Java Development before you start your journey. 
+
+The best way to become a Java Developer is by developing some mini projects to some advanced projects. These Top 7 Java Project Ideas To Enhance Programming Skills will definitely help you.
+
+1) Core Java 
+In this particular Java Developer roadmap, the first thing you need to learn is Core Java. So in the core java, you need to learn the following major topics:
+
+Data Types and Variables
+Features and Architecture
+Operator and Expressions
+String Class
+Conditional Statements and Loops
+OOPs Concept in Depth
+Multithreading
+JAVA IO Streams
+Collection Framework
+Java 8
+2) Advanced Java
+After learning Core Java you need to learn the Advanced Java concepts. In this particular Advanced Java, you need to learn the following topics
+
+Design Pattern
+JVM
+Threads
+Servlet and JSP
+Concurrent Programming
+Garbage Collection
+Best Practice and Code Structure
+In Advanced Java, you don’t need to learn everything in detail but you just be aware of all the above things and how those are working. And whenever you are working on these particular things you can read about them and you can implement them in your project. 
+
+3) IDE’s
+Once you are well versed with the core and advanced java you should be able to code java applications. So for that, you should know any of the following IDE’s 
+
+IntelliJ IDEA
+Eclipse
+Spring Tool Suite
+VS Code
+You must be aware of the different shortcuts for your IDE whichever you are preferring so that it will optimize your workflow and increase your productivity for developing applications. 
+
+4) Build Tools
+Now all your java code should be built. So for building your Java project you must be aware of the different build tools. Some of the amazing tools that you can use for building your Java project are:
+
+Maven
+Gradle
+Ant
+5) Servers
+Once you have created your web application it’s time to deploy it. So you will be deploying your web application on the server so you must be aware of at least one server that you can work with. Tomcat is the most widely used server. Apart from that JBOSS is also used in many places. 
+
+Tomcat
+Weblogic
+JBOSS
+WebSphere
+Jetty
+6) Database
+Database plays an integral role in creating a Java application as storing data is a crucial aspect. So if you work in any organization you have to work with databases. You have to write the queries to execute different operations on a database. So some of the topics that you need to learn are:
+
+SQL
+ACID
+Joins
+Indexes
+Constraints
+Advanced SQL
+Procedures
+Packages
+Functions
+DBA
+NoSQL
+MongoDB
+ORM (Object-Relational Mapping)Framework
+JPA (Java Persistence API)
+Hibernate
+iBatis
+Spring Data JPA
+7) Testing
+Testing is a very important phase during your development journey. So you must be aware of how to test your Java application to minimize error and maximize efficiency. 
+
+Unit Testing
+Integration Testing
+Debugging Code (Must know)
+Junit
+Mockito
+8) Logging
+There are different logging libraries are available in Java. So whenever you create the Java application you should log your errors or files to get information about what’s happening in the system. You must be aware of any of the following Logging libraries
+
+Log4j
+Log4j2
+Log-back
+9) Frameworks
+There are a lot of different frameworks are available in Java. These frameworks foster easy debugging, extensive code reusability, improved code efficiency, and reduce the overall development time. So mentioned below are some of the Java Frameworks that you can learn:
+
+Spring
+Spring Boot
+Hibernate
+JSF
+GWT
+Micronaut
+These 10 Most Popular Java Frameworks That You Must Try tells about some popular frameworks you can use in your projects.
+
+10) Keep Practicing 
+“Practice makes a man perfect” this phrase manifests the importance of continuous practice and learning. So keep learning, practicing, and stay updated.
+
