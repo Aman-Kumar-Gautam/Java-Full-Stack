@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OperationonSting",
+            "request": "launch",
+            "mainClass": "Notes.Data_Structure.String.OperationonSting",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-UserRegistrationApplication<user_registration>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
